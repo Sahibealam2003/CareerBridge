@@ -11,7 +11,6 @@ const Home = () => {
   const [jobType, setJobType] = useState("");
 
   const { jobs, loading, error, page, setPage } = useJobs(query, jobType);
-console.log(jobs[0]);
 
   const jobTypes = [
     { label: "All", value: "" },
